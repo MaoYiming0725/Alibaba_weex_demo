@@ -12,13 +12,17 @@
 </template>
 <style scoped>
 .wrapper{
+  width: 750px;
   background-color: rgba(255, 255, 255, 1);
   margin-top: 10px;
   padding-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .head{
-  margin: 20px;
+  margin: 40px;
 }
 
 .box{

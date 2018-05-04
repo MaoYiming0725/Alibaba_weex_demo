@@ -115,7 +115,7 @@
 
 </style>
 <script>
-import Block2 from "../components/Block2.vue";
+import Block2 from "@/components/Block2.vue";
 const modal = weex.requireModule('modal');
 const stream = weex.requireModule('stream');
 const animation = weex.requireModule('animation');

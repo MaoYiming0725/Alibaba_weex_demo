@@ -4,7 +4,7 @@
       <image class="background_img" :src="sliderInfo.sliderList[sliderInfo.pic_index].src"></image>
       <image ref="cover" class="background_img trans" :src="sliderInfo.sliderList[sliderInfo.pic_index0].src" v:bind-style="pageInfo.bgImgObj"></image>
     </div>
-    <list class="wrapper" @loadmore="fetch" loadmoreoffset="100" style="height: 1200px;" @scroll="scrollHandler">
+    <list class="wrapper" @loadmore="fetch" loadmoreoffset="100" style="height: 1250px;" @scroll="scrollHandler">
       <header>
         <div class="header_block" :class="[headerStyleHandler(pageInfo.scroll_count)]">
           <text class="header_text">{{pageInfo.head}}</text>
@@ -158,8 +158,8 @@
 }
 </style>
 <script>
-import Slider1 from "../components/Slider1.vue";
-import Block1 from "../components/Block1.vue";
+import Slider1 from "@/components/Slider1.vue";
+import Block1 from "@/components/Block1.vue";
 const modal = weex.requireModule('modal');
 const stream = weex.requireModule('stream');
 const animation = weex.requireModule('animation');
@@ -257,7 +257,7 @@ export default {
       const cover = this.$refs.cover;
       let _this = this;
       this.sliderInfo.pic_index = idx;
-      modal.toast({message: idx, duration: 0.5});
+      //modal.toast({message: idx, duration: 0.5});
       animation.transition(cover, {
           styles: {
             opacity: '0',

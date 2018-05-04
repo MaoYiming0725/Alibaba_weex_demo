@@ -20,14 +20,9 @@
     justify-content: center;
     align-items: center;
   }
-
-  .img1{
-  width:500px;
-  height: 300px;
-  position:absolute;
-  margin-left: -100px;
-  }
   .img{
+    width:700px;
+    height: 500px;
   }
   .title_block{
     padding-top: 50px;
@@ -51,7 +46,7 @@
         },
         created () {
           for(var i = 0; i < this.infoList.length; i++){
-            this.imgStyle.push({ width: '700', height: '500', marginLeft: ''});
+            this.imgStyle.push({ width: '700', height: '500'});
           }
         },
         mounted () {
