@@ -5,7 +5,7 @@
     </div>
     <list class="wrapper" style="height: 1200px;" @scroll="scrollHandler">
       <header>
-        <div class="header_block" style="margin-bottom: 200px;">
+        <div class="header_block" style="margin-bottom: 200px;" :class="[headerStyleHandler()]">
           <text class="header_text">{{pageInfo.head}}</text>
         </div>
       </header>
@@ -46,6 +46,40 @@
   height: 100px;
   justify-content: center;
   align-items: center;
+}
+
+.header0{
+  background-color: rgba(255, 255, 255, 0);
+}
+.header1{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.header2{
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.header3{
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.header4{
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.header5{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.header6{
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.header7{
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.header8{
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.header9{
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.header{
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .header_text{
